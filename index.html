@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast-Food</title>
+
+
+</head>
+<body>
+
+    <div>
+
+        <h1>Monte seu Lanche</h1>
+
+        <p>Valor inicial: R$ 4.00</p>
+
+        <form action="total" method="POST" enctype="multipart/form-data">
+
+            <fieldset>
+                <legend>Quantidade de Hambúrgueres</legend>
+
+                <p>
+                <input type="radio" id="h1" name="hamburguer" value="2" checked>
+                <label for="h1">1 (R$ 2,00)</label></p>
+
+                <p>
+                <input type="radio" id="h2" name="hamburguer" value="3">
+                <label for="h2">2 (R$ 3,00)</label></p>
+
+                <p>
+                <input type="radio" id="h3" name="hamburguer" value="5">
+                <label for="h3">3 (R$ 5,00)</label></p>  
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Fatias de Queijo</legend>
+        
+                <p>
+                <input type="radio" id="q0" name="queijo" value="0" checked>
+                <label for="q0">Sem queijo (R$ 0,00)</label></p>
+        
+
+                <p>
+                <input type="radio" id="q1" name="queijo" value="0.50">
+                <label for="q1">1 (R$ 0,50)</label></p>
+        
+                <p>
+                <input type="radio" id="q2" name="queijo" value="0.70">
+                <label for="q2">2 (R$ 0,70)</label></p>
+                    
+                <p>
+                <input type="radio" id="q3" name="queijo" value="1">
+                <label for="q3">3 (R$ 1,00)</label></p>  
+        
+            </fieldset>
+
+            <fieldset>
+                <legend>Salada</legend>
+            
+                <p>
+                <input type="radio" id="s0" name="salada" value="0" checked>
+                <label for="s0">Sem salada (R$ 0,00)</label></p>
+            
+                <p>
+                <input type="radio" id="s1" name="salada" value="1">
+                <label for="s1">Completa (R$ 1,00)</label></p>
+            
+                <p>
+                <input type="radio" id="s2" name="salada" value="0.30">
+                <label for="s2">Apenas alface (R$ 0,30)</label></p>  
+            
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Acompanhamento</legend>
+                
+                <p>
+                <input type="radio" id="sem-ac" name="acompanhamento" value="0" checked>
+                <label for="sem-ac">Nenhum (R$ 0,00)</label></p>
+                
+                <p>
+                <input type="radio" id="ac-batata" name="acompanhamento" value="5">
+                <label for="ac-batata">Batata Frita (R$ 5,00)</label></p>
+                
+                <p>
+                <input type="radio" id="ac-nugget" name="acompanhamento" value="6.50">
+                <label for="ac-nugget">Nuggets (R$ 6,50)</label></p>  
+                
+            </fieldset>
+
+            <fieldset>
+                <legend>Bebida</legend>
+                    
+                <p>
+                <input type="radio" id="b0" name="bebida" value="0" checked>
+                <label for="b0">Sem bebida (R$ 0,00)</label></p>
+                    
+                <p>
+                <input type="radio" id="b-coca" name="bebida" value="6">
+                <label for="b-coca">Coca-Cola (R$ 6,00)</label></p>
+                    
+                <p>
+                <input type="radio" id="b-guaravita" name="bebida" value="3.70">
+                <label for="b-guaravita">Guaravita (R$ 3,70)</label></p>  
+                    
+            </fieldset>
+
+            <p><input type="submit" value="Calcular Total"></p>
+
+        </form>
+    </div>
+</body>
+</html>
