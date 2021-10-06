@@ -23,7 +23,8 @@ http.createServer(
                     res.write(`<div>`);
                     res.write(`<h1>Valor Total</h1>`);
                     res.write(`<br>`);
-                    res.write(`<p>R$ ${total.toFixed(2)}</p>`);                            res.write(`<br>`);
+                    res.write(`<p>R$ ${total.toFixed(2)}</p>`);                            
+                    res.write(`<br>`);
                     res.write(`<br>`);
                     res.write(`<input type="submit" value="Confirmar Pedido">`);
                     res.write(`<br>`);
