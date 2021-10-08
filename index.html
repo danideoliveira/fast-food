@@ -5,15 +5,153 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fast-Food</title>
-</head>
 
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+        body {
+            background-color: rgb(53, 53, 53);
+        }
+
+        div {
+            background-color: white;
+            color: rgb(117, 117, 117);
+            width: 90%;
+            padding: 2%;
+            border: black 1px solid;
+            box-shadow: 5px 5px 5px black;
+            margin: 0 auto;
+        }
+
+        fieldset {
+            width: 80%;
+            margin: auto;
+            margin-bottom: 15px;
+            margin-top: 25px;
+        }
+
+        legend {
+            font-size: 16pt;
+            color: rgb(82, 82, 82);
+        }
+
+        h1 {
+            color: rgb(53, 53, 53);
+            font-weight: bold;
+            font-family: 'Lobster', Arial, Helvetica, sans-serif;
+            text-align: center;
+            font-size: 60px;
+        }
+
+        p {
+            font-size: 16pt;
+            line-height: 20pt;
+        }
+
+        input {
+            border-radius: 5px;
+            border: gray 1px solid;
+            text-align: right;
+        }
+
+        a {
+            color: black;
+            font-size: 10pt;
+            text-decoration: none;
+        }
+
+        p#voltar {
+            text-align: center;
+        }
+
+        #v-inicial {
+            text-align: center;
+            font-size: 20pt;
+        }
+
+        img {
+            margin: auto;
+            display: flex;
+        }
+
+        .submit {
+            display: flex;
+            margin: auto;
+            border-style: none;
+            background-color: rgb(53, 53, 53);
+            color: white;
+            padding: 10px;
+            font-size: 12pt;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+
+        .submit:hover {
+            transition: 0.5s;
+            background-color: rgb(37, 37, 37);
+        }
+
+        #confirmar {
+            width: 150px;
+        }
+
+        #cancelar {
+            border-radius: 5px;
+            text-decoration: none;
+            width: 130px;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+        }
+
+        #confirmar:hover {
+            transition: 0.5s;
+            background-color: rgb(18, 82, 18);
+        }
+
+        #cancelar:hover {
+            transition: 0.5s;
+            background-color: rgb(82, 18, 18);
+        }
+
+        #total {
+            text-align: center;
+            font-size: 35px;
+        }
+
+        @media screen and (max-width: 600px) {
+            
+            h1 {
+                font-size: 50px;
+            }
+            
+            img {
+                width: 240px;
+            }
+
+            fieldset {
+                width: 85%;
+            }
+
+            p, #v-inicial, legend{
+                font-size: 14pt;
+            }
+        }
+
+    </style>
+
+
+</head>
 <body>
 
-    <div>
+    <div id="div_master">
 
         <h1>Monte seu Lanche</h1>
 
-        <p>Valor inicial: R$ 4.00</p>
+        <img src="https://cdn-0.imagensemoldes.com.br/wp-content/uploads/2020/07/Foto-Lanche-PNG.png" width="380px" alt="Foto do Lanche">
+
+        <p id="v-inicial">Valor inicial: R$ 4.00</p>
 
         <form action="total" method="POST" enctype="multipart/form-data">
 
@@ -108,9 +246,10 @@
                     
             </fieldset>
 
-            <p><input type="submit" value="Calcular Total"></p>
+            <p><input type="submit" class="submit" value="Calcular Total"></p>
 
         </form>
     </div>
+
 </body>
 </html>
