@@ -8,9 +8,14 @@ Pequeno projeto criado utilizando NodeJS. Um site de lanchonete, onde o usuário
 	<img src="prints/home.png">
 	<img src="prints/home2.png">
 </p>
+
 ### Tela de Total
+
 <p align="center">
-	<img src="imagens/imagens_readme/total.png">
+	<img src="prints/total.png">
 </p>
+
+
+
 
 
